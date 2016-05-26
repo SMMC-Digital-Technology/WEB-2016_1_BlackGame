@@ -1,0 +1,22 @@
+#introduction {
+    
+height: 100px;
+background: #33cc33;
+}
+
+#introductionright {
+    float: right
+height: 100px;
+background: #ffffff;
+}
+
+#introductionleft {
+float: left
+height: 20px;
+    width: 30px
+background: #ffffff;
+}
+
+#title {
+    text-align: center
+}
