@@ -1,22 +1,81 @@
 #introduction {
-    
-height: 100px;
-background: #33cc33;
-}
-
-#introductionright {
-    float: right
-height: 100px;
-background: #ffffff;
-}
-
-#introductionleft {
-float: left
-height: 20px;
-    width: 30px
-background: #ffffff;
+    text-align: left
+        
 }
 
 #title {
-    text-align: center
+    margin: 70px;
+    text-align: center;
+     height: 150px;
+    width: 1350px;
+    background: #00ff00;
+    font-size:   385%;
+    
+}
+
+#mainbody {
+    margin: 70px;
+     position: relative; top: 60px;
+    padding: 4px;
+    height: 550px;
+    width: 1320px;
+    border:9px;
+border-style:solid;
+border-color:black;
+    position: relative; bottom: 20
+         
+}
+
+#mainbodytitle {
+    text-align: center;
+    position: relative; bottom: 50px;
+    font-size:   215%;
+    
+        
+         
+}
+
+#footertitle {
+    margin: 70px;
+    position: relative; top: 20px;
+    padding: 2px;
+    height: 150px;
+    width: 1320px;
+    border:9px;
+border-style:solid;
+border-color:black;
+    position: relative; bottom: 20;
+    
+    
+}
+
+#legal {
+    margin: 70px;
+   position: relative; top: 40px;
+    padding: 2px;
+    height: 250px;
+    width: 1320px;
+    border:9px;
+border-style:solid;
+border-color:black;
+    position: relative; top: 100px;
+}
+
+#legaltitle {
+    text-align: center;
+    position: relative; bottom: 50px;
+    font-size:   215%;
+}
+
+
+
+#heading2 {
+    text-align: center;
+    position: relative; bottom: 50px;
+        font-size:   215%;
+}
+
+#paraintro {
+    text-align: left;
+    position: relative; bottom: 40px;
 }
