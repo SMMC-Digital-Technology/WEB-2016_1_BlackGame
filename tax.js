@@ -24,6 +24,11 @@ function calcTax(x)
 	return tax;
 }
 
+function genGraph()
+{
+	
+}
+
 function taxIo()
 {
 	var income = input.value;
