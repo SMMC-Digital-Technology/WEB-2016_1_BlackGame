@@ -1,29 +1,31 @@
-
 #introduction {
-    text-align: left
+    text-align: left;
+    background: #ffffff;
         
 }
+
+
 
 #title {
     margin: 70px;
     text-align: center;
      height: 150px;
     width: 1350px;
-    background: #00ff00;
+    background: #ffffff;
     font-size:   385%;
     
 }
 
 #mainbody {
-    margin: 70px;
-     position: relative; top: 60px;
+    margin: 20px;
+     position: relative; bottom: 150px;
     padding: 4px;
     height: 550px;
-    width: 1320px;
+    width: 1270px;
     border:9px;
 border-style:solid;
 border-color:black;
-    position: relative; bottom: 20
+   
          
 }
 
@@ -37,29 +39,28 @@ border-color:black;
 }
 
 #footertitle {
-    margin: 70px;
-    position: relative; top: 20px;
+    margin: 20px;
+    position: relative; bottom: 210px;
     padding: 2px;
-    height: 150px;
-    width: 1320px;
+    height: 300px;
+    width: 1270px;
     border:9px;
 border-style:solid;
 border-color:black;
-    position: relative; bottom: 20;
+   
     
     
 }
 
 #legal {
-    margin: 70px;
-   position: relative; top: 40px;
+    margin: 20px;
+   position: relative; bottom: 90px;
     padding: 2px;
-    height: 250px;
-    width: 1320px;
+    height: 270px;
+    width: 1270px;
     border:9px;
 border-style:solid;
 border-color:black;
-    position: relative; top: 100px;
 }
 
 #legaltitle {
@@ -78,5 +79,16 @@ border-color:black;
 
 #paraintro {
     text-align: left;
-    position: relative; bottom: 40px;
+    position: relative; bottom: 100px;
+}
+
+
+#mainbodypara {
+    position: relative; bottom: 100px;
+}
+
+#legalpara {
+    text-align: left;
+    position: relative; bottom: 45px;
+    font-size: 45%
 }
