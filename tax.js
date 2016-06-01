@@ -23,21 +23,34 @@ function calcTax(x)
 
 function genGraph()
 {
-	var tax, data, layout;
+	var plot, data, layout;
+	var income = [];
+	var tax = [];
 	
-	tax =
+	for (i = 0; i <= 250000; i += 5000)
 	{
+		income[i] = i;
+		tax[i] = calcTax(i);
+	}
+	
+	plot =
+	{
+		x: income,
+		y: tax,
 		type: "scatter",
 		mode: "lines+markers",
 		name: "tax"
 	};
 	
-	data = [tax];
+	data = [plot];
 	
 	layout =
 	{
-		title: "Annual Tax Graph",
-		yaxis: title: "Tax (p.a.)",
+		title: "Annual Tax in Zabututi",
+		yaxis: 
+		{
+			title: "Tax (p.a.)"
+		},
 		xaxis:
 		{
 			title: "Income (p.a.)",
@@ -45,7 +58,7 @@ function genGraph()
 		}
 	};
 	
-	Plotly.newPlot("graph", data, layout)
+	Plotly.newPlot("graph", data, layout);
 }
 
 function taxIo()
@@ -54,3 +67,5 @@ function taxIo()
 	
 	output.innerHTML = MSG_TAX + calcTax(income);
 }
+
+genGraph();
