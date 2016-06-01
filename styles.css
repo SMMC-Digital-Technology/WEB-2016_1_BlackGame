@@ -1,10 +1,7 @@
 #introduction {
     text-align: left;
     background: #ffffff;
-        
 }
-
-
 
 #title {
     margin: 70px;
@@ -12,83 +9,80 @@
      height: 150px;
     width: 1350px;
     background: #ffffff;
-    font-size:   385%;
-    
+    font-size: 385%;
 }
 
 #mainbody {
     margin: 20px;
-     position: relative; bottom: 150px;
+    position: relative; 
+    bottom: 150px;
     padding: 4px;
     height: 550px;
     width: 1270px;
-    border:9px;
-border-style:solid;
-border-color:black;
-   
-         
+    border: 9px;
+    border-style: solid;
+    border-color: black;
 }
 
 #mainbodytitle {
     text-align: center;
-    position: relative; bottom: 50px;
-    font-size:   215%;
-    
-        
-         
+    position: relative; 
+    bottom: 50px;
+    font-size: 215%;
 }
 
 #footertitle {
     margin: 20px;
-    position: relative; bottom: 210px;
+    position: relative; 
+    bottom: 210px;
     padding: 2px;
     height: 300px;
     width: 1270px;
-    border:9px;
-border-style:solid;
-border-color:black;
-   
-    
-    
+    border: 9px;
+    border-style: solid;
+    border-color: black;
 }
 
 #legal {
     margin: 20px;
-   position: relative; bottom: 90px;
+    position: relative; 
+    bottom: 90px;
     padding: 2px;
     height: 270px;
     width: 1270px;
-    border:9px;
-border-style:solid;
-border-color:black;
+    border: 9px;
+    border-style: solid;
+    border-color: black;
 }
 
 #legaltitle {
     text-align: center;
-    position: relative; bottom: 50px;
-    font-size:   215%;
+    position: relative; 
+    bottom: 50px;
+    font-size: 215%;
 }
-
-
 
 #heading2 {
     text-align: center;
-    position: relative; bottom: 50px;
-        font-size:   215%;
+    position: relative; 
+    bottom: 50px;
+    font-size: 215%;
 }
 
 #paraintro {
     text-align: left;
-    position: relative; bottom: 100px;
+    position: relative; 
+    bottom: 100px;
 }
 
-
 #mainbodypara {
-    position: relative; bottom: 100px;
+    position: relative; 
+    bottom: 100px;
 }
 
 #legalpara {
     text-align: left;
-    position: relative; bottom: 45px;
+    position: relative; 
+    bottom: 45px;
     font-size: 45%
 }
