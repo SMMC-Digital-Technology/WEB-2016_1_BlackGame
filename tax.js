@@ -23,7 +23,29 @@ function calcTax(x)
 
 function genGraph()
 {
+	var tax, data, layout;
 	
+	tax =
+	{
+		type: "scatter",
+		mode: "lines+markers",
+		name: "tax"
+	};
+	
+	data = [tax];
+	
+	layout =
+	{
+		title: "Annual Tax Graph",
+		yaxis: title: "Tax (p.a.)",
+		xaxis:
+		{
+			title: "Income (p.a.)",
+			range: [0, 250000]
+		}
+	};
+	
+	Plotly.newPlot("graph", data, layout)
 }
 
 function taxIo()
