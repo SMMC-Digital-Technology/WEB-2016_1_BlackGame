@@ -1,7 +1,4 @@
-var input = document.getElementById("input");
-var output = document.getElementById("output");
-
-var MSG_TAX;
+var MSG_TAX = "Your annual tax is $";
 
 function calcTax(x)
 {
