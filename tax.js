@@ -1,5 +1,13 @@
+/*
+Message displayed in the output field along with the calculated tax.
+Called in the taxIo function.
+*/
 var MSG_TAX = "Your annual tax is $";
 
+/*
+Function calculates the tax from a specified income and returns it.
+The income is specified in function call through the x parameter.
+*/
 function calcTax(x)
 {
 	var tax;
@@ -18,6 +26,10 @@ function calcTax(x)
 	return tax;
 }
 
+/*
+Generates a graph of the income vs tax from $0-$250000 and displays it in the graph div in index.html.
+Uses the Plotly library's graph generating function from plotly.js linked in index.html. 
+*/
 function genGraph()
 {
 	var plot, data, layout;
@@ -58,6 +70,10 @@ function genGraph()
 	Plotly.newPlot("graph", data, layout);
 }
 
+/*
+Called by the button in index.html using the onClick attribute.
+Gets the income from the text field with the ID "input", passes it through the calcTax function and displays it in the paragraph with the ID "output".
+*/
 function taxIo()
 {
 	var income = input.value;
@@ -65,4 +81,5 @@ function taxIo()
 	output.innerHTML = MSG_TAX + calcTax(income);
 }
 
+// Calls the function to generate the graph.
 genGraph();
