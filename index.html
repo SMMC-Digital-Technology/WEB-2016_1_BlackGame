@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="utf-8">
-        <title>Zabututi Tax Calculcator</title>
+        <title>Zabututi Tax Calculator</title>
         
         <link href="styles.css" type="text/css" rel="stylesheet">
+		
+		<!-- Link to the Balthazar font through the Google fonts API. -->
+		<link href="https://fonts.googleapis.com/css?family=Balthazar" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <img src="assets/images/header.png" alt="Zabututi Tax Calculator">
+            
+		<div class="section">
+            <h2>Welcome</h2>
+			<p>Welcome to the Zabututi Tax Calculator.
+			This new calculator will allow you to calculate your annual tax based on your income. 
+			This will help prevent you from being charged too much tax. 
+			To use the calculator simply type your income into the text field below and
+			click the "Calculate" button.</p>
+        </div>
+        
+        <div class="section">
+			<h2>Tax Calculator</h2>
+			<p>Annual Income:</p>
+			<input type="number" id="input" min="0">
+			<input type="submit" id="submit" value="Calculate" onClick="taxIo()">
+			<p id="output">Please enter a value.</p>
+        </div>
+			
+		<div class="section">
+			<h2>Tax Graph</h2>
+			<div id="graph"></div>
+		</div>
         
         <!-- Link to the Plotly library for generating the graph. -->
         <script src="plotly.js"></script>
         
         <!-- Link to the JavaScript file for calculating the tax and handling I/O. -->
         <script src="tax.js"></script>
-    </head>
-
-    <body>
-        
-         <img src="header.png" 
-              alt="header image" 
-              style="width:1295px;height:228px;
-                     position:relative;left: 15px;
-                     position:relative;top: 50px;">
-        
-        <div id="title">
-             <h1></h1>
-        </div>
-        
-        
-            
-            
-            
-            <div id="footertitle">
-                <div id="heading2"> <h2>Introduction</h2></div>
-            <div id="paraintro"> <p>Welcome to the Zabututi Income Tax Calculator.
-            This new calculator will allow you to calculate your Income Tax. 
-            This will help prevent you from getting charged two much Income Tax. 
-            To use the calculator simply type your income into the typing field.  
-            Then click the "calculate Tax" button.  The site will then calculate your 
-            income tax.</p></div> 
-                </div>
-        
-        <div id="mainbody">
-             <div id="mainbodytitle">
-         <h2>Calculator</h2></div>
-            <div id="mainbodypara">
-               <p>hello</p>
-               
-             </div>
-        </div>
-       
-        
-             
-             
-          
-        
-        
-            
-           <div id="legal">
-    
-               <div id="legaltitle">
-                   <h2>copyright</h2>
-                   <div id="legalpara"><p>hello</p>
-                   </div>
-               </div>
-        </div>
-                 
-            
+		
+		<footer>
+            <p>&copy; Copyright Zabututi 2016</p>
+            <p>Website by Darcy Lynch & Aaron Mullins</p>
+        </footer>
     </body>
-
 </html>
