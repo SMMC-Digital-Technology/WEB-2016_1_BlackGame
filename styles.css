@@ -1,3 +1,7 @@
+/*
+Clears all the default margin and padding formatting so they can be easily customised later.
+Also sets the overall font to be used (Balthazar which is from the Google Fonts API).
+*/
 *
 {
 	margin: 0;
@@ -17,14 +21,15 @@ img
 	height: 224px;
 }
 
-h2 {
-    text-align: center;
-    font-size: 40px;
+h2 
+{
+	text-align: center;
+	font-size: 40px;
 }
 
 p 
 {
-    text-align: center;
+	text-align: center;
 	font-size: 26px;
 }
 
@@ -41,13 +46,20 @@ input
 	margin: 0 auto 0 auto;
 }
 
+/*
+Template for the three sections in index.html (the welcome, calculator and graph sections).
+*/
 .section 
 {
 	margin-top: 32px;
 	padding: 16px;
-    border: 9px solid black;
+	border: 9px solid black;
 }
 
+/*
+Not to be confused with the styling for the input tag. 
+This is used by the income text field with the ID "input".
+*/
 #input
 {
 	font-size: 20px;
