@@ -6,42 +6,46 @@
         
         <link href="styles.css" type="text/css" rel="stylesheet">
 		
-		<!-- Link to the Balthazar font through the Google fonts API. -->
-		<link href="https://fonts.googleapis.com/css?family=Balthazar" type="text/css" rel="stylesheet">
+	<!-- Link to the Balthazar font through the Google fonts API. -->
+	<link href="https://fonts.googleapis.com/css?family=Balthazar" type="text/css" rel="stylesheet">
     </head>
 
     <body>
         <img src="assets/images/header.png" alt="Zabututi Tax Calculator">
-            
-		<div class="section">
-            <h2>Welcome</h2>
-			<p>Welcome to the Zabututi Tax Calculator.
-			This new calculator will allow you to calculate your annual tax based on your income. 
-			This will help prevent you from being charged too much tax. 
-			To use the calculator simply type your income into the text field below and
-			click the "Calculate" button.</p>
+        
+        <!-- The information section. -->
+	<div class="section">
+		<h2>Welcome</h2>
+		<p>Welcome to the Zabututi Tax Calculator.
+		This new calculator will allow you to calculate your annual tax based on your income. 
+		This will help prevent you from being charged too much tax. 
+		To use the calculator simply type your income into the text field below and
+		click the "Calculate" button.</p>
         </div>
         
+        <!-- The calculator section. -->
         <div class="section">
-			<h2>Tax Calculator</h2>
-			<p>Annual Income:</p>
-			<input type="number" id="input" min="0">
-			<input type="submit" id="submit" value="Calculate" onClick="taxIo()">
-			<p id="output">Please enter a value.</p>
+		<h2>Tax Calculator</h2>
+		<p>Annual Income:</p>
+		<input type="number" id="input" min="0">
+		<input type="submit" id="submit" value="Calculate" onClick="taxIo()">
+		<p id="output">Please enter a value.</p>
         </div>
 			
-		<div class="section">
-			<h2>Tax Graph</h2>
-			<div id="graph"></div>
-		</div>
+        <!-- The graph section. -->
+	<div class="section">
+		<h2>Tax Graph</h2>
+		<div id="graph"></div>
+	</div>
         
         <!-- Link to the Plotly library for generating the graph. -->
         <script src="plotly.js"></script>
         
         <!-- Link to the JavaScript file for calculating the tax and handling I/O. -->
         <script src="tax.js"></script>
-		
-		<footer>
+	
+	<!-- The footer with copyright and credits. -->
+	<footer>
             <p>&copy; Copyright Zabututi 2016</p>
             <p>Website by Darcy Lynch & Aaron Mullins</p>
         </footer>
