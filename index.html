@@ -11,9 +11,10 @@
     </head>
 
     <body>
+    	<!-- Zabututi Tax Calculator banner placed at the top of the page. Created by Darcy Lynch 2016 -->
         <img src="assets/images/header.png" alt="Zabututi Tax Calculator">
         
-        <!-- The information section. -->
+        <!-- Section containing welcome information. -->
 	<div class="section">
 		<h2>Welcome</h2>
 		<p>Welcome to the Zabututi Tax Calculator.
@@ -23,25 +24,28 @@
 		click the "Calculate" button.</p>
         </div>
         
-        <!-- The calculator section. -->
+        <!-- Section containing the calculator form. -->
         <div class="section">
 		<h2>Tax Calculator</h2>
 		<p>Annual Income:</p>
+		<!-- The input field for the income used in tax.js. -->
 		<input type="number" id="input" min="0">
+		<!-- Calls the taxIo function in tax.js. -->
 		<input type="submit" id="submit" value="Calculate" onClick="taxIo()">
 		<p id="output">Please enter a value.</p>
         </div>
 			
-        <!-- The graph section. -->
+        <!-- Section containing the graph for tax vs income from $0-$250000. -->
 	<div class="section">
 		<h2>Tax Graph</h2>
+		<!-- Container for the graph to be displayed in, which is generated in tax.js -->
 		<div id="graph"></div>
 	</div>
         
-        <!-- Link to the Plotly library for generating the graph. -->
+        <!-- Link to the Plotly library, used to generate the graph in tax.js. -->
         <script src="plotly.js"></script>
         
-        <!-- Link to the JavaScript file for calculating the tax and handling I/O. -->
+        <!-- Link to the JavaScript file for calculating the tax and handling input and output. -->
         <script src="tax.js"></script>
 	
 	<!-- The footer with copyright and credits. -->
